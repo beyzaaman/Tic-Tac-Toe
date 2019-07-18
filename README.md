@@ -1,7 +1,7 @@
 # Tic Tac Toe Project
 
 This project aims to represent a simple text-base version of the Tic Tac Toe game. <br /> <br />
- Checkout for the learn how to play Tic Tac Toe [in here](https://www.wikihow.com/Play-Tic-Tac-Toe).
+ Checkout for the learn how to play Tic Tac Toe in [ here](https://www.wikihow.com/Play-Tic-Tac-Toe).
 
 ## Contents
 
