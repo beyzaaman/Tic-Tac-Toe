@@ -152,7 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="implementation.h" />
+    <ClInclude Include="tic_tac_toe.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

@@ -18,7 +18,7 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="implementation.h">
+    <ClInclude Include="tic_tac_toe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
