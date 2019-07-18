@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "implementation.h"
+#include "tic_tac_toe.h"
 #include <time.h>
 #include <stdlib.h>
 #include <utility>
@@ -34,7 +34,7 @@ void tic_tac_toe:: delete_pair(int row,int column)
 	int i = 0;
 	
 
-	while(1)
+	while(true)
 	{
 		if (location_vector_[i].first == row && location_vector_[i].second == column)
 		{
