@@ -5,8 +5,8 @@
 
 int main()
 {
-	tic_tac_toe* ttt = new tic_tac_toe();
-	ttt->smart_computer_play();
-	delete ttt;
+	tic_tac_toe ttt;
+	ttt.smart_computer_play();
+
 	return 0;
 }

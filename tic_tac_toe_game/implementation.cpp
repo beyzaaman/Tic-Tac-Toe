@@ -14,7 +14,7 @@ tic_tac_toe::tic_tac_toe() :
 
 {}
 
-tic_tac_toe::~tic_tac_toe()
+tic_tac_toe :: ~tic_tac_toe()
 {
 }
 
@@ -75,17 +75,17 @@ void tic_tac_toe:: delete_pair(int row,int column)
 		 if (player_)
 		 {
 			 game_[row][column] = 'X';
-			 delete_pair(row, column);
 			 player_name = '1';
 			 player_ = false;
 		 }
 		 else
 		 {
 			 game_[row][column] ='O';
-			 delete_pair(row, column);
 			 player_name = '2';
 			 player_ = true;
 		 }
+
+		 delete_pair(row, column);
 
 		 
 			 if ((game_[row][0] == game_[row][1]) && (game_[row][1] == game_[row][2]))
@@ -158,7 +158,7 @@ void tic_tac_toe::computer_play()
 	display_game();
 	make_pair();
 	
-	while(1)
+	while(true)
 	{
 		std::cout << (player_ ? "Player X\n" : "Player O\n");
 		
@@ -169,7 +169,7 @@ void tic_tac_toe::computer_play()
 		else
 		{
 			srand(static_cast<unsigned int>(time(nullptr)));
-			if (location_vector_.size()!=0)
+			if (!location_vector_.empty())
 			{
 				int size = location_vector_.size();
 				int i = rand() % size;
@@ -212,7 +212,7 @@ void tic_tac_toe::smart_computer_play()
 	display_game();
 	make_pair();
 	
-	while (1)
+	while (true)
 	{
 		
 		std::cout << (player_ ? "Player X\n" : "Player O\n");
@@ -513,8 +513,6 @@ close_t tic_tac_toe::winnable_cases()
 
 	return best_pos;
 	}
-
-
 
 
 
