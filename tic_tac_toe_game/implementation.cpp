@@ -1,16 +1,12 @@
 #include "pch.h"
 #include "tic_tac_toe.h"
-#include <time.h>
-#include <stdlib.h>
-#include <utility>
 
 
 tic_tac_toe::tic_tac_toe() :
 	row_(0),
 	column_(0),
 	player_(true),
-	game_({ { 32,32,32 }, { 32,32,32 }, { 32,32,32 } }),
-	location_vector_()
+	game_({ { 32,32,32 }, { 32,32,32 }, { 32,32,32 } })
 
 {}
 
