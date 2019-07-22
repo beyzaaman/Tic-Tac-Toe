@@ -85,12 +85,14 @@ void tic_tac_toe:: delete_pair(int row,int column)
 
 		 
 			 if ((game_[row][0] == game_[row][1]) && (game_[row][1] == game_[row][2]))
-			 {
+			 {	
+				 display_game();
 				 std::cout << "Player " << player_name << " won.\n";
 				 return 0;
 			 }
 			 else if ((game_[0][column] == game_[1][column]) && (game_[1][column] == game_[2][column]))
 			 {
+				 display_game();
 				 std::cout << "Player " << player_name << " won.\n";
 				 return 0;
 			 }
@@ -98,11 +100,13 @@ void tic_tac_toe:: delete_pair(int row,int column)
 			 {
 				 if ((game_[0][0] == game_[1][1]) && (game_[1][1] == game_[2][2]))
 				 {
+					 display_game();
 					 std::cout << "Player " << player_name << " won.\n";
 					 return 0;
 				 }
 				 if ((game_[2][0] == game_[1][1]) && (game_[1][1] == game_[0][2]))
 				 {
+					 display_game();
 					 std::cout << "Player " << player_name << " won.\n";
 					 return 0;
 				 }
@@ -174,6 +178,7 @@ void tic_tac_toe::computer_play()
 			}
 			else
 			{
+				display_game();
 				std::cout << "Draw.\n";
 				return;
 			}
@@ -241,6 +246,7 @@ void tic_tac_toe::smart_computer_play()
 
 				else
 				{
+					display_game();
 					std::cout << "Draw.\n";
 					return;
 				}

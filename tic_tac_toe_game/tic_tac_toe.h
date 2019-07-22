@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <time.h>
+#include <stdlib.h>
 
 typedef std::pair<int, int> close_t;
 
